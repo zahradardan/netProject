@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<link href="log_reg.css" rel="stylesheet" type="text/css">-->
+    <link href="global.css" rel="stylesheet" type="text/css">
+    <link href="reg_style.css" rel="stylesheet" type="text/css">
+    <script src="validation.js" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <!--<script src="log_reg.js" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <meta charset="UTF-8">
+    <title>register</title>
+
+</head>
+
+<body style="padding: 0">
+
+<div class="container-fluid"
+     style="direction: rtl; z-index: 10">
+    <div class="row" style="padding: 0px;">
+
+            <div class="col-xs-12" style="padding: 0">
+                <img src="imgs/idea.jpg" class="back">
+            </div>
+
+
+        <div class="col-xs-3" style="padding: 0">
+        </div>
+
+        <div class="col-xs-6" style="padding: 0">
+            <div class="register_div">
+                <h1 class="header_txt" >ثبت نام</h1>
+                <p class="header_txt">لطفا برای ثبت نام بخش های زیر را پر کنید !</p>
+                <hr>
+
+                <label for="email"><b>نام کاربری</b></label>
+                <input type="text" placeholder="Enter Email" id="email" required >
+
+                <label for="psw"><b>رمز عبور</b></label>
+                <input type="password" placeholder="Enter Password" id="psw" required onkeypress="passwordcheck()">
+                <p style="color: indianred;visibility: hidden;margin-right: 10%" id="error1"> رمز عبور باید شامل حداقل 8 کاراکتر باشد</p>
+                <label for="psw-repeat"><b>تکرار رمز عبور</b></label>
+                <input type="password" placeholder="Repeat Password" id="psw-repeat" required onkeypress="reapetpasswordcheck()">
+                <p style="color: indianred;visibility: hidden;margin-right: 10%" id="error2">رمز عبور وارد شده با رمز عبور اول مطابقت ندارد.</p>
+
+                <button class="user_mode" style="float: right ; margin-right: 25%">ثبت نام دانشجویی</button>
+                <button class="user_mode" style="float: left ; margin-left: 25%">ثبت نام کارمندی</button>
+
+            </div>
+            </div>
+        <div class="col-xs-3" style="padding: 0">
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

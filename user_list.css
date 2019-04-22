@@ -1,0 +1,59 @@
+/*.user_card{*/
+
+    /*padding-right: 10px;*/
+    /*background-color: white;*/
+    /*border-radius: 7px;*/
+    /*height: 20vh;*/
+    /*box-shadow: 1px 1px 2px cadetblue;*/
+    /*margin-top: 10px;*/
+    /*padding-top: 6px;*/
+    /*width: 90%;*/
+    /*alignment: center;*/
+    /*overflow: auto;*/
+    /*padding-bottom: 10px;*/
+/*}*/
+
+.header {
+    padding: 10px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 20px;
+    overflow: auto;
+    margin-bottom: 30px;
+}
+
+.header_mark{
+    vertical-align: center;
+    background-color: white;
+    border-radius: 7px;
+    float: right;
+    margin-right: 20px;
+    width: 100px;
+    font-size: 50%;
+}
+.manager_act{
+    color: white;
+    box-shadow:1px 1px 1px #aaaaaa;
+    border-radius: 5px;
+    padding: 3px;
+    overflow: auto;
+    margin-top: 10px;
+    margin-right: 4px;
+    outline: none;
+    border: none;
+}
+.manager_act:hover{
+    box-shadow:2px 2px 2px #aaaaaa;
+
+    transition: 1s;
+    outline: none;
+
+}
+.description{
+    margin-right: 5px;
+}
+p{
+    margin-top: 15px;
+    font-weight: bold;
+}

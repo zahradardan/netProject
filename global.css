@@ -1,0 +1,19 @@
+:root{
+    --color1: rgba(255, 181, 6, 0.73);
+    --color2: rgba(236, 0, 20, 0.61);
+}
+.user_card{
+
+    padding-right: 10px;
+    background-color: white;
+    border-radius: 7px;
+    height: 20vh;
+    box-shadow: 1px 1px 2px cadetblue;
+    margin-top: 10px;
+    padding-top: 6px;
+    width: 90%;
+    alignment: center;
+    overflow: auto;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="log_reg.css" rel="stylesheet" type="text/css">
+    <link href="global.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="log_reg.js" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <meta charset="UTF-8">
+    <title>Log In</title>
+
+</head>
+<body>
+
+<header>
+
+    <div class="container-fluid"
+         style="direction: rtl; z-index: 10">
+
+        <div class="row" style="padding: 0px">
+            <div class="col-xs-12" id="row_div1">
+
+                <div class="col-xs-6" >
+
+                </div>
+
+                <div class="col-xs-6" style="margin-top: 50px;">
+                    <img src="imgs/receptionist.png" style="width: 40px;height: 40px;">
+                    <span>
+                به صفحه ی انتقادات و پیشنهادات بهشتی خوش آمدید
+                     </span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</header>
+
+
+<div class="container-fluid"
+     style="direction: rtl; z-index: 10"
+>
+    <div class="row" style="padding: 0px;margin-top: -10px">
+        <div class="col-xs-12">
+
+            <div class="col-xs-3" >
+                <img src="imgs/envelope.png" class="envelope">
+            </div>
+
+            <div class="col-xs-9">
+              </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid"  style="direction: rtl; z-index: 10">
+    <div class="row" style="padding: 0px">
+    <div class="col-xs-12" id="row_div2">
+        <div class="col-xs-4" style="padding-top: 10px">
+
+        </div>
+        <div class="col-xs-2">
+            <button class="log_reg_btn" style="float: left" onclick="open_modal()">
+                ورود
+            </button>
+        </div>
+        <div class="col-xs-2">
+            <button class="log_reg_btn" style="float: right " onclick="load_users()">
+                ثبت نام
+            </button>
+        </div>
+
+        <div class="col-xs-4">
+
+        </div>
+
+    </div>
+</div>
+</div>
+
+<div id="Login_modal"  class="modal">
+    <div class="modal-body">
+        <span class="close" onclick="close_modal()"
+              role="dialog">&times;</span>
+        <img src="imgs/receptionist.png" class="modl_img">
+        <form>
+            <div class="input-group">
+                <input type="text" class="inp_style" placeholder="ایمیل ">
+                <input type="text" class="inp_style" placeholder=" رمز عبور ">
+                <div>
+                    <div style="text-align: center">
+                    <button type="submit" class="logIn_btn">ورود</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
