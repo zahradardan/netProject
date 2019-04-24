@@ -1,172 +1,181 @@
-  [
-    {
-      "userName": "Ali Alavi",
-      "password": "1234",
-      "userType": "Student",
-      "confirmed": true,
-      "case": [
-        {
-          "submitter": "Ali Alavi",
-          "caseId": "1",
-          "description": "bla bla bla 1",
-          "status": "open",
-          "refer": "علی اکبری عزیزم",
-          "date": "2/2/97",
-          "topic": "شکایت"
-        },{
-          "submitter": "Ali Alavi",
-          "caseId": "2",
-          "description": "bla bla bla 2",
-          "status": "open",
-          "refer": "null",
-          "date": "null",
-          "topic": "انتقاد"
-        },{
-          "submitter": "Ali Alavi",
-          "caseId": "3",
-          "description": "bla bla bla 3",
-          "status": "open",
-          "refer": "null",
-          "date": "null",
-          "topic": "انتقاد"
-        }
-      ]
-    },
-    {
-      "userName": "taghi taghavi",
-      "password": "2345",
-      "userType": "Student",
-      "confirmed": true,
-      "topic": "",
-      "case": [
-        {
-          "submitter": "taghi taghavi",
-          "caseId": "1",
-          "description": "bla bla bla 1",
-          "status": "open",
-          "refer": "null",
-          "date": "null",
-          "topic": "شکایت"
-        },{
-          "submitter": "taghi taghavi",
-          "caseId": "2",
-          "description": "bla bla bla 2",
-          "status": "open",
-          "refer": "null",
-          "date": "null",
-          "topic": "شکایت"
-        }
-      ]
-    },
-    {
-      "userName": "Naghi Naghavi",
-      "password": "3456",
-      "userType": "Teacher",
-      "confirmed": true,
-      "case": [
-        {
-          "submitter": "taghi taghavi",
-          "caseId": 1,
-          "description": "bla bla bla 1",
-          "status": "open",
-          "refer": "null",
-          "date": "null",
-          "topic": "پیشنهاد"
-        },{
-          "submitter": "taghi taghavi",
-          "caseId": 2,
-          "description": "bla bla bla 2",
-          "status": "open",
-          "refer": "null",
-          "date": "null",
-          "topic": "انتقاد"
-        }
-        ]
-        },
-        {
-          "userName": "Zahra Hashemianpour",
-          "password": "1234",
-          "userType": "Student",
-          "confirmed": true,
-          "topic": "",
-          "case": [
-            {
-              "submitter": "Zahra Hashemianpour",
-              "caseId": "1",
-              "description": "bla bla bla 1",
-              "status": "open",
-              "refer": "null",
-              "date": "null",
-              "topic": "پیشنهاد"
-            },{
-              "submitter": "Zahra Hashemianpour",
-              "caseId": "2",
-              "description": "bla bla bla 2",
-              "status": "open",
-              "refer": "null",
-              "date": "null",
-              "topic": "انتقاد"
-            },{
-              "submitter": "Zahra Hashemianpour",
-              "caseId": "3",
-              "description": "bla bla bla 3",
-              "status": "open",
-              "refer": "null",
-              "date": "null",
-              "topic": "شکایت"
-            }
-          ]
-        },
-        {
-          "userName": "Shiva Azimi",
-          "password": "2345",
-          "userType": "Student",
-          "confirmed": true,
-          "case": [
-            {
-              "submitter": "Shiva Azimi",
-              "caseId": "1",
-              "description": "bla bla bla 1",
-              "status": "open",
-              "refer": "null",
-              "date": "null",
-              "topic": "پیشنهاد"
-            },{
-              "submitter": "Shiva Azimi",
-              "caseId": "2",
-              "description": "bla bla bla 2",
-              "status": "open",
-              "refer": "null",
-              "date": "null",
-              "topic": ""
-            }
-          ]
-        },
-        {
-          "userName": "Sogol",
-          "password": "3456",
-          "userType": "Teacher",
-          "confirmed": true,
-
-          "case": [
-            {
-              "submitter": "Sogol",
-              "caseId": 1,
-              "description": "bla bla bla 1",
-              "status": "open",
-              "refer": "null",
-              "date": "null",
-              "topic": "انتقاد"
-            },
-            {
-              "submitter": "Sogol",
-              "caseId": 2,
-              "description": "bla bla bla 2",
-              "status": "open",
-              "refer": "null",
-              "date": "null",
-              "topic": "شکایت"
-            }
-          ]
-        }
-  ]
+[
+  {
+    "userName": "شیوا عظیمی",
+    "password": "95243038",
+    "userType": "مدیر",
+    "confirmed": true,
+    "case": [
+      {
+        "submitter": "شیوا عظیمی",
+        "caseId": "1",
+        "description": "سرد بودن کلاس ها",
+        "status": "باز",
+        "refer": "زهرا هاشمیان پور",
+        "date": "1398/1/1 8:26 PM",
+        "topic": "شکایت"
+      },{
+        "submitter": "شیوا عظیمی",
+        "caseId": "2",
+        "description": "تداخل امتحان درس های هم نیاز",
+        "status": "بسته",
+        "refer": "دکتر قوامی",
+        "date": "1398/1/1 10:18 AM",
+        "topic": "انتقاد"
+      },{
+        "submitter": "شیوا عظیمی",
+        "caseId": "3",
+        "description": "افزایش ظرفیت",
+        "status": "در حال بررسی",
+        "refer": "استاد علی اکبری",
+        "date": "1398/2/4 5:45 PM",
+        "topic": "پیشنهاد"
+      }, {
+        "submitter": "شیوا عظیمی",
+        "caseId": "4",
+        "description": "سرد بودن کلاس ها",
+        "status": "بسته",
+        "refer": "دکتر قوامی",
+        "date": "1398/1/1 8:26 PM",
+        "topic": "شکایت"
+      },{
+        "submitter": "شیوا عظیمی",
+        "caseId": "5",
+        "description": "تداخل امتحان درس های هم نیاز",
+        "status": "بسته",
+        "refer": "زهرا هاشمیان پور",
+        "date": "1398/1/1 10:18 AM",
+        "topic": "انتقاد"
+      },{
+        "submitter": "شیوا عظیمی",
+        "caseId": "6",
+        "description": "افزایش ظرفیت",
+        "status": "بسته",
+        "refer": "دکتر قوامی",
+        "date": "1398/2/4 5:45 PM",
+        "topic": "انتقاد"
+      }
+    ]
+  },
+  {
+    "userName": "زهرا هاشمیان پور",
+    "password": "95243070",
+    "userType": "استاد",
+    "confirmed": true,
+    "case": [
+      {
+        "submitter": "زهرا هاشمیان پور",
+        "caseId": "7",
+        "description": "سرد بودن کلاس ها",
+        "status": "باز",
+        "refer": "شیوا عظیمی",
+        "date": "1398/1/1 8:26 PM",
+        "topic": "شکایت"
+      },{
+        "submitter": "زهرا هاشمیان پور",
+        "caseId": "8",
+        "description": "تداخل امتحان درس های هم نیاز",
+        "status": "بسته",
+        "refer": "دکتر شمس فرد",
+        "date": "1398/1/1 10:18 AM",
+        "topic": "انتقاد"
+      },{
+        "submitter": "زهرا هاشمیان پور",
+        "caseId": "9",
+        "description": "افزایش ظرفیت",
+        "status": "در حال بررسی",
+        "refer": "دکتر قوامی",
+        "date": "1398/2/4 5:45 PM",
+        "topic": "پیشنهاد"
+      },{
+        "submitter": "زهرا هاشمیان پور",
+        "caseId": "10",
+        "description": "افزایش ظرفیت",
+        "status": "بسته",
+        "refer": "سوگل احمدی",
+        "date": "1398/2/4 5:45 PM",
+        "topic": "پیشنهاد"
+      },{
+        "submitter": "زهرا هاشمیان پور",
+        "caseId": "11",
+        "description": "افزایش ظرفیت",
+        "status": "باز",
+        "refer": "شیوا عظیمی",
+        "date": "1398/2/4 5:45 PM",
+        "topic": "پیشنهاد"
+      }
+    ]
+  },
+  {
+    "userName": "سوگل احمدی",
+    "password": "95243038",
+    "userType": "دانشجو",
+    "confirmed": true,
+    "case": [
+      {
+        "submitter": "سوگل احمدی",
+        "caseId": "12",
+        "description": "سرد بودن کلاس ها",
+        "status": "باز",
+        "refer": "شیوا عظیمی",
+        "date": "1398/1/1 8:26 PM",
+        "topic": "شکایت"
+      },{
+        "submitter": "سوگل احمدی",
+        "caseId": "13",
+        "description": "تداخل امتحان درس های هم نیاز",
+        "status": "بسته",
+        "refer": "دکتر وحیدی",
+        "date": "1398/1/1 10:18 AM",
+        "topic": "انتقاد"
+      },{
+        "submitter": "سوگل احمدی",
+        "caseId": "14",
+        "description": "درخواست حذف قانون سنوات",
+        "status": "باز",
+        "refer": "دکتر قوامی زاده",
+        "date": "1398/2/4 5:45 PM",
+        "topic": "پیشنهاد"
+      },{
+        "submitter": "سوگل احمدی",
+        "caseId": "15",
+        "description": "درخواست حذف قانون سنوات",
+        "status": "بسته",
+        "refer": "زهرا هاشمیان پور",
+        "date": "1398/2/4 5:45 PM",
+        "topic": "انتقاد"
+      }, {
+        "submitter": "سوگل احمدی",
+        "caseId": "16",
+        "description": "سرد بودن کلاس ها",
+        "status": "باز",
+        "refer": "دکتر قوامی",
+        "date": "1398/1/1 8:26 PM",
+        "topic": "شکایت"
+      },{
+        "submitter": "سوگل احمدی",
+        "caseId": "17",
+        "description": "تداخل امتحان درس های هم نیاز",
+        "status": "بسته",
+        "refer": "زهرا هاشمیان پور",
+        "date": "1398/1/1 10:18 AM",
+        "topic": "انتقاد"
+      }, {
+        "submitter": "سوگل احمدی",
+        "caseId": "18",
+        "description": "سرد بودن کلاس ها",
+        "status": "باز",
+        "refer": "زهرا هاشمیان پور",
+        "date": "1398/1/1 8:26 PM",
+        "topic": "شکایت"
+      },{
+        "submitter": "سوگل احمدی",
+        "caseId": "19",
+        "description": "تداخل امتحان درس های هم نیاز",
+        "status": "در حال بررسی",
+        "refer": "شیوا عظیمی",
+        "date": "1398/1/1 10:18 AM",
+        "topic": "انتقاد"
+      }
+    ]
+  }
+]
