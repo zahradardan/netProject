@@ -1,6 +1,9 @@
 :root{
-    --color1: rgba(255, 181, 6, 0.73);
-    --color2: rgba(236, 0, 20, 0.61);
+    --color1: #4BEAB4;
+    --color2: #3D8B93;
+    --color3:#3C8A92;
+    --pink:#345681;
+    --orange: #3D8B93;
 }
 .user_card{
 
@@ -17,3 +20,260 @@
     padding-bottom: 10px;
     padding-left: 10px;
 }
+
+
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('Yekan.ttf') format("truetype");
+}
+
+body{
+    font-family: 'MyWebFont';
+    /*font-weight: bold;*/
+}
+
+body *{
+    border-radius: 5px;
+}
+
+.background , .background1{
+    animation: slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, var(--color1) 50%, var(--color2) 50%);
+    top: 0;
+    bottom: 0;
+    left: -50%;
+    opacity: .5;
+    position: fixed;
+    right: -50%;
+    z-index: -1;
+}
+
+.background{
+    height: 170px;
+}
+
+.background1{
+    height: calc(5% + 510px);
+}
+
+.bg2 {
+    animation-direction: alternate;
+    animation-duration: 7s;
+}
+
+.bg3 {
+    animation-duration: 10s;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(-25%);
+    }
+    to {
+        transform: translateX(25%);
+    }
+}
+
+.container {
+    width: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+#profile {
+    position: fixed;
+    height: 90px;
+    margin-top: 50px;
+}
+
+#profile * {
+    display: inline-block;
+}
+
+#info {
+    width: fit-content;
+}
+
+#info * {
+    margin-left: 20px;
+}
+
+#info img {
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    margin-top: -40px;
+    border: 4px solid rgba(255, 255, 255, 0.85);
+    border-radius: 50%;
+}
+
+#info p {
+    font-size: 20px;
+    position: absolute;
+    color:var(--pink);
+    font-weight: bold;
+    text-align: center;
+}
+
+
+#edit {
+    float: right;
+    margin-top: 10px;
+    margin-right: 15px;
+    background-color: black;
+}
+
+#edit button {
+    width: 150px;
+    font-family: MyWebFont;
+    background:linear-gradient(var(--color1),var(--color3));
+    color:white;
+}
+
+
+.btn{
+    height: 40px;
+    outline: none;
+    border: none;
+    box-shadow: 4px 4px 5px rgba(0,0,0,0.6);
+    font-size: 17px;
+    font-family: MyWebFont;
+}
+
+.btn:hover{
+    box-shadow: none;
+}
+
+.breaker {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, var(--pink), var(--orange));
+    border-radius: 10px;
+    margin: 15px 0px 0px 0px;
+}
+
+.refer {
+    width: 90%;
+    height: fit-content;
+    position: relative;
+    margin-top: 60px;
+    text-align: right;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6);
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.refer:last-of-type{
+    margin-bottom: 100px;
+}
+
+.refer:hover {
+    box-shadow: 12px 12px 30px rgba(0, 0, 0, 0.3) , -12px -12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.refer * {
+    margin: 0px 5px 0px 5px;
+    font-family: MyWebFont;
+}
+
+.refer .up * {
+    display: inline-block;
+}
+
+.refer .date {
+    float: left;
+    font-family: Calibri;
+    margin-top: -20px;
+}
+
+.refer .submitter {
+    margin-right: 110px;
+    color: var(--pink);
+}
+
+.refer p {
+    display: block;
+}
+
+.refer .topic {
+    font-size: 25px;
+    margin-right: 0px;
+    margin-right: 0px;
+}
+
+.refer img {
+    width: 80px;
+    height: 80px;
+    right: 20px;
+    position: absolute;
+    margin-top: -40px;
+    border: 4px solid rgba(255, 255, 255, 0.75);
+    border-radius: 50%;
+}
+
+.refer div {
+    display: block;
+}
+
+.middle * {
+    display: inline-block;
+    text-align: right;
+}
+
+.divider ,.divider1{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--orange);
+}
+
+.divider1 {
+    color: white;
+}
+
+@media screen and (max-width: 900px) {
+
+    #refers,#profile,#items{
+        width: 450px;
+    }
+}
+
+
+.vertical_center{
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.content-bubble:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: rgba(255, 255, 255, 0.8);
+    border-bottom: 0;
+    margin-bottom: -20px;
+}
+
+
+.scroll::-webkit-scrollbar {
+    width: 12px;
+}
+
+.scroll::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+
+
