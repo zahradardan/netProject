@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $.get("users.json", function (data) {
         for (var i = 0; i < data.length; i++) {
-              if(data[i].confirmed === false && data[i].userType !== "Student"){
+              if(data[i].confirmed === false && data[i].userType !== "دانشجو"){
                   var profile_container = document.createElement("DIV");
                   profile_container.className = "profile_container";
                   var profile_container_title = document.createElement("P");
