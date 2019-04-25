@@ -1,0 +1,35 @@
+:root {
+    --color1: #FF7700;
+    --color2: #FF0052;
+    --color3: #FF4200;
+    --direction: -45deg;
+    --pink: #E1304E;
+    --orange: #F05D27;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: MyWebFont;
+}
+
+#refers {
+    position: fixed;
+    background: linear-gradient(to right bottom, var(--color1), var(--pink));
+    height: 80%;
+    margin-top: 230px;
+    overflow: scroll;
+}
+
+
+
+
+
+
+
+
+
+

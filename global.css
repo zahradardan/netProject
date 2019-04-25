@@ -1,26 +1,12 @@
-:root{
+:root {
+
     --color1: #4BEAB4;
     --color2: #3D8B93;
     --color3:#3C8A92;
     --pink:#345681;
     --orange: #3D8B93;
-}
-.user_card{
 
-    padding-right: 10px;
-    background-color: white;
-    border-radius: 7px;
-    height: 20vh;
-    box-shadow: 1px 1px 2px cadetblue;
-    margin-top: 10px;
-    padding-top: 6px;
-    width: 90%;
-    alignment: center;
-    overflow: auto;
-    padding-bottom: 10px;
-    padding-left: 10px;
 }
-
 
 @font-face {
     font-family: 'MyWebFont';
@@ -49,7 +35,7 @@ body *{
 }
 
 .background{
-    height: 170px;
+    height: 215px;
 }
 
 .background1{
@@ -88,7 +74,7 @@ body *{
 #profile {
     position: fixed;
     height: 90px;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 #profile * {
@@ -274,3 +260,72 @@ body *{
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
+
+#topnav{
+    position: fixed;
+    width: 100%;
+    height: fit-content;
+    left: 0px;
+    top: 0px;
+    background:linear-gradient(var(--color1),var(--color2));
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.5);
+    z-index: 2;
+}
+
+#topnav *{
+    display: block;
+}
+
+#topnav .topbar {
+    width: 100%;
+    height: 50px;
+}
+
+#topnav .topbar *{
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.topbar button{
+    width: 30px;
+    height: 30px;
+    background-image:url(imgs/responsive.png) ;
+    background-color: inherit;
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    border: none;
+    outline: none;
+    margin-left: 5px;
+}
+
+.topbar p{
+    position: relative;
+    left: 50%;
+    transform: translateX(calc(-50% - 30px));
+    font-size: 22px;
+    color: white;
+}
+
+#topnav a{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    display: none;
+    transition-duration: 0.5s;
+}
+
+#topnav a:hover{
+    background-color: rgba(255,255,255,0.2);
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+

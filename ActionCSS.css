@@ -1,0 +1,239 @@
+
+#action {
+    width: 50%;
+    height: fit-content;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%, 0);
+    position: absolute;
+    border-radius: 10px;
+}
+
+#case {
+    width: 100%;
+    height: 450px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: inherit;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3), -3px -3px 10px rgba(0, 0, 0, 0.3);
+    color: var(--pink);
+}
+
+.up {
+    width: 100%;
+    height: 125px;
+}
+
+.up * {
+    position: relative;
+    display: inline-block;
+    margin: 0 0 0 0;
+}
+
+.up .submitter {
+    font-size: 30px;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.35));
+    float: right;
+    margin: 80px -65px 0px 0px;
+    transform: translateY(-50%);
+}
+
+.up .userType{
+    margin: 75px -118px 0px 0px;
+    transform: translateY(50%);
+    font-size: 23px;
+    float: right;
+}
+
+.up .date {
+    position: relative;
+    font-size: 20px;
+    font-family: Calibri;
+    float: left;
+    margin: 10px 0px 0px 15px;
+}
+
+#case img {
+    position: relative;
+    transform: translateX(50%);
+    margin-top: 15px;
+    /*left: 100%;*/
+    float: right;
+    width: 120px;
+    height: 120px;
+    border: 10px solid rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.middle , .down{
+    width: 95%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid var(--pink);
+}
+
+.middle{
+    height: 180px;
+    margin-top: 25px;
+}
+
+.down{
+    height: 70px;
+    margin-top: 15px;
+    text-align: right;
+}
+
+.down *{
+    margin: 0 0 0 0;
+}
+
+.middle *{
+    display:inline-block;
+    margin: 0 10px 0 0 ;
+    float: right;
+}
+
+.topic{
+    font-size: 30px;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.35));
+    font-weight: bold;
+}
+
+.divider , .divider1{
+    font-weight: bold;
+    color: var(--color2);
+}
+
+.divider{
+    font-size: 30px;
+}
+
+.divider1{
+    font-size: 25px;
+}
+
+.down *{
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.description{
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+#option button {
+    width: 49%;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#option button:nth-of-type(1) {
+    float: right;
+    color: var(--orange);
+}
+
+#option button:nth-of-type(2) {
+    float: left;
+    color: var(--orange);
+}
+
+#option button:hover {
+    background: linear-gradient(var(--color2), var(--pink));
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.4);
+    color: white;
+}
+
+#execute {
+    width: 100%;
+    height: 50px;
+    margin-top: 50px;
+}
+
+.actionStyle * {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.4);
+    border: none;
+    font-size: 20px;
+    outline: none;
+    font-family: MyWebFont;
+    margin: 30px 0px 10px 0px;
+    text-align: right;
+    color: var(--orange);
+}
+
+#execute, #refer {
+    display: none;
+    position: relative;
+}
+
+
+#send {
+    display: none;
+    width: 100%;
+    background: linear-gradient(to right, var(--orange), var(--color3), var(--color2), var(--pink));
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#refer input {
+    width: 100%;
+}
+
+.actionStyle form input {
+    width: 80%;
+    height: 40px;
+    float: right;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.4), inset -2px -2px 10px rgba(0, 0, 0, 0.2);
+    /*word-wrap: break-word;*/
+}
+
+.actionStyle form input::placeholder {
+    font-size: 22px;
+    color: var(--orange);
+    transition-duration: 0.5s;
+    font-family: MyWebFont;
+}
+
+.actionStyle form input:focus::placeholder {
+    filter: opacity(0.5);
+}
+
+.actionStyle select {
+    width: 18%;
+    height: 40px;
+    font-weight: bold;
+    text-align-last: center;
+}
+
+
+.actionStyle select:after {
+    text-align: center;
+    border-radius: 10px;
+}
+
+.optionStyle {
+    background-color: whitesmoke;
+    text-align: right;
+}
+
+.optionStyle:hover {
+    background-color: var(--orange);
+}
+
+@media screen and (max-width: 900px) {
+    #action {
+        width: 450px;
+    }
+}
+

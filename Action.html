@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>اقدام</title>
+    <script src="jquery.min.js"></script>
+    <link rel="stylesheet" href="ActionCSS.css">
+    <link rel="stylesheet" href="global.css">
+    <script src="ActionJS.js"></script>
+
+</head>
+<body>
+
+<div class="background1"></div>
+<div class="background1 bg2"></div>
+<div class="background1 bg3"></div>
+
+<div id="action">
+
+    <div id="case"></div>
+
+    <div id="option">
+        <button id="exeButton" class="btn" onclick="execute()">اقدام</button>
+        <button id="refButton" class="btn" onclick="refer()">ارجاع</button>
+    </div>
+
+    <div id="execute" class="actionStyle">
+        <form action="">
+            <input type="text" name="comment" placeholder=" ...پاراف ">
+        </form>
+        <select id="selecting" name="status" class="select-box">
+            <option class="optionStyle">باز</option>
+            <option class="optionStyle">بسته</option>
+            <option class="optionStyle">در حال بررسی</option>
+            <option class="optionStyle">تعویق</option>
+        </select>
+    </div>
+
+    <div id="refer" class="actionStyle">
+        <form action="">
+            <input type="text" name="refered" placeholder=" ...ارجاع به ">
+        </form>
+    </div>
+
+    <button id="send" class="btn">ارسال</button>
+</div>
+
+</body>
+</html>

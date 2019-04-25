@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>موارد ثبت شده</title>
+    <script src="jquery.min.js"></script>
+    <link rel="stylesheet" href="RecordCSS.css">
+    <link rel="stylesheet" href="global.css">
+    <script src="RecordJS.js"></script>
+    <script src="globalJS.js"></script>
+</head>
+
+<body>
+<div id="topnav" visible="false">
+    <div class="topbar">
+        <button id="transform"></button>
+        <p>مشاهده وضعیت موارد</p>
+    </div>
+    <a href="log_reg.html" class="link">لاگین</a>
+    <a href="register.html" class="link">ثبت نام کاربر</a>
+    <a href="editprofile.html" class="link">ویرایش پروفایل کاربر</a>
+    <a href="usercheck.html" class="link">تأیید کاربران توسط مدیر</a>
+    <a href="caseinput.html" class="link">ثبت یک مورد</a>
+    <a href="Cartable.html" class="link">مشاهده موارد</a>
+    <a href="Record.html" class="link">مشاهده وضعیت موارد</a>
+    <a href="user_list.html" class="link">مدیریت کاربران</a>
+    <a href="report.html" class="link">گزارشگیری از سیستم</a>
+</div>
+
+<div id="profile" class="container content-bubble">
+    <div id="info">
+        <img src="imgs/profilePicture.jpg">
+        <p id="username" class="vertical_center">شیوا عظیمی</p>
+    </div>
+    <div id="edit">
+        <button class="btn">
+            ویرایش پروفایل
+        </button>
+    </div>
+</div>
+
+<div id="refers" class="scroll"></div>
+
+<div id="filters">
+    <div id="right">
+    <div id="status">
+        <a>وضعیت</a>
+    </div>
+    <div id="submitter">
+        <a>ارسال کننده</a>
+    </div>
+    <div id="responsible">
+        <a>مسئول</a>
+    </div>
+    </div>
+    <div id="left">
+        <div class="select speech-bubble">
+        <select class="selection" >
+        <option>بدون فیلتر</option>
+        <option>باز</option>
+        <option>بسته</option>
+        <option>در حال بررسی</option>
+        <option>تعویق</option>
+        </select>
+        </div>
+
+        <div class="select speech-bubble">
+            <select id="submitters" class="selection">
+            </select>
+        </div>
+
+        <div class="select speech-bubble">
+            <select id="responsibles" class="selection">
+                <option>بدون فیلتر</option>
+            </select>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
