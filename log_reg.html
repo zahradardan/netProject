@@ -70,7 +70,7 @@
             </button>
         </div>
         <div class="col-xs-2">
-            <button class="log_reg_btn" style="float: right " onclick="load_users()">
+            <button class="log_reg_btn" style="float: right " onclick="location.href='register.html'">
                 ثبت نام
             </button>
         </div>
@@ -90,11 +90,14 @@
         <img src="imgs/receptionist.png" class="modl_img">
         <form>
             <div class="input-group">
-                <input type="text" class="inp_style" placeholder="ایمیل ">
-                <input type="text" class="inp_style" placeholder=" رمز عبور ">
-                <div>
+                <input type="text" class="inp_style" placeholder=" نام کاربری " id="user_name">
+                <br>
+                <p style="color: indianred; visibility: hidden;float: right;margin-right: 15%" id="warn1">این فیلد نمیتواند خالی باشد</p>
+                <input type="text" class="inp_style" placeholder=" رمز عبور " id="pass">
+                <p style="color: indianred ; visibility: hidden; float: right;margin-right: 15%" id="warn2">این فیلد نمیتواند خالی باشد</p>
+                <div style="alignment: center">
                     <div style="text-align: center">
-                    <button type="submit" class="logIn_btn">ورود</button>
+                    <button type="button" class="logIn_btn" onclick="not_empty()">ورود</button>
                     </div>
                 </div>
             </div>
