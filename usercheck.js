@@ -1,4 +1,18 @@
 $(document).ready(function () {
+    $("#transform").click(function () {
+        var links=document.getElementsByClassName("link");
+        var visibile=document.getElementById("topnav").getAttribute("visible");
+        if(visibile==="false"){
+            document.getElementById("topnav").setAttribute("visible","true");
+            for(var i=0;i<links.length;i++)
+                links[i].style.display='inline-block';
+        }
+        if(visibile==="true"){
+            document.getElementById("topnav").setAttribute("visible","false");
+            for(var i=0;i<links.length;i++)
+                links[i].style.display='none';
+        }
+    });
     $.get("users.json", function (data) {
         for (var i = 0; i < data.length; i++) {
               if(data[i].confirmed === false && data[i].userType !== "دانشجو"){
@@ -10,7 +24,8 @@ $(document).ready(function () {
                   var Hr = document.createElement("HR");
                   var innerdata = document.createElement("P");
                   innerdata.className = "data";
-                  innerdata.innerHTML = data[i].userType+"    :    "+"   "+ "نقش کاربر";
+                  innerdata.innerHTML = innerdata.innerHTML + "  نقش کاربر  :";
+                  innerdata.innerHTML = innerdata.innerHTML +"  "+ data[i].userType;
                   var button = document.createElement("BUTTON");
                   button.className = "card_buttun";
                   button.innerHTML = "تایید کاربر";
