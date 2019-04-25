@@ -1,18 +1,4 @@
 $(document).ready(function () {
-    $("#transform").click(function () {
-        var links=document.getElementsByClassName("link");
-        var visibile=document.getElementById("topnav").getAttribute("visible");
-        if(visibile==="false"){
-            document.getElementById("topnav").setAttribute("visible","true");
-            for(var i=0;i<links.length;i++)
-                links[i].style.display='inline-block';
-        }
-        if(visibile==="true"){
-            document.getElementById("topnav").setAttribute("visible","false");
-            for(var i=0;i<links.length;i++)
-                links[i].style.display='none';
-        }
-    });
     $.get("users.json", function (data) {
         for (var i = 0; i < data.length; i++) {
               if(data[i].confirmed === false && data[i].userType !== "دانشجو"){
@@ -43,10 +29,6 @@ $(document).ready(function () {
         }
 
     });
-
-});
-
-$(document).ready(function () {
     $("#transform").click(function () {
         var links=document.getElementsByClassName("link");
         var visibile=document.getElementById("topnav").getAttribute("visible");
@@ -61,23 +43,6 @@ $(document).ready(function () {
                 links[i].style.display='none';
         }
     });
-})
-/*
-function load() {
-    var mydata = users;
+});
 
-    var div = document.getElementById('container_div');
 
-    for(var i = 0;i < mydata.length; i++)
-    {
-        if(mydata[i].userType !="student" && mydata[i].UserStaus == false){
-            div.innerHTML = div.innerHTML +" <div class =\"profile_container\" id=''>"+
-                " <p class =\"profile_container_title\">"+mydata[i].name+"</p><hr>"+
-                "<p class=\"title\">نقش کاربر</p>"+
-                " <p class=\"data\">"+mydata[i].userType+"</p><hr>"+
-                " <button class=\"card_buttun\" >تایید کاربر</button>"
-                +"</div>"
-        }
-    }
-}
-*/
