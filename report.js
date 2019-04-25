@@ -119,7 +119,6 @@ $(document).ready(function () {
             title_box3.appendChild(header_mark3);
 
         });
-    // });
 });
 function myFunction(x) {
     x.classList.toggle("change");
@@ -129,4 +128,12 @@ function myFunction(x) {
     }else{
         menue.className="menue1";
     }
+}
+
+function date_base() {
+    var date = document.getElementById("date");
+    var string = date.value;
+
+
+
 }
