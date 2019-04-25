@@ -7,6 +7,23 @@
     margin-bottom: 0;
 }
 
+.user_card{
+
+    padding-right: 10px;
+    background-color: white;
+    border-radius: 7px;
+    height: 20vh;
+    box-shadow: 3px 3px 3px cadetblue, 1px 1px 3px cadetblue;
+    margin-top: 10px;
+    padding-top: 6px;
+    width: 90%;
+    alignment: center;
+    overflow: auto;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+
 .header_mark{
     vertical-align: center;
     background-color: white;
