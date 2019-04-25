@@ -1,0 +1,115 @@
+:root{
+    --color1:#4BEAB4;
+    --color2:#3D8B93;
+    --color3:#3C8A92;
+    --color4:#345681;
+}
+@font-face {
+    font-family: 'myfont';
+    src: url('Yekan.ttf') format("truetype");
+}
+body{
+    font-family: "myfont";
+}
+button{
+    font-family: "myfont";
+}
+body{
+    background:linear-gradient(to right bottom,#4BEAB4,#3D8B93 ,#3C8A92);
+}
+.title_page{
+   text-align: center;
+    color: var(--color3);
+    font-size: 40px;
+    margin: 20px 0 0 0;
+
+}
+body hr{
+    width: 80%;
+    border: 6px solid var(--darkorange);
+    margin-bottom: 0px;
+}
+.container{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile_container{
+   width : 600px;
+    height : 270px ;
+    background-color: white;
+    box-shadow:5px 10px 18px var(--color4);
+    border-radius: 10px;
+    margin-top: 20px;
+
+}
+.profile_container_title{
+    position: relative;
+    top: 0px;
+    left:70%;
+    transform: translateX(-50%);
+    height: 25px;
+    width :fit-content;
+    font-size: 25px;
+    color: var(--color3);
+    font-weight: bold;
+    text-align: right;
+    padding-top: 10px;
+   /*margin-left: 200px;*/
+    margin-bottom: 30px;
+}
+.profile_container hr{
+    width: 90%;
+    border: 4px solid var(--color4);
+    margin-bottom: 0px;
+}
+
+
+.div1{
+    overflow: hidden;
+    display: inline-block;
+}
+.div2{
+    overflow: hidden;
+    display: inline-block;
+}
+.data{
+    position: relative;
+    color:var(--color3);
+    text-align: right;
+    width:fit-content;
+    font-size: 20px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left:380px;
+}
+.card_buttun{
+    margin-top: 20px;
+    margin-left: 70px;
+    width: 90px;
+    height:40px;
+    padding-top: 0px;
+    text-align: center;
+    background-color: var(--color3);
+    border-radius: 10px;
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    display: block;
+    outline: none;
+}
+.card_buttun:hover {
+    box-shadow: 5px 4px 4px var(--color4);
+}
+@media screen  and (max-width: 900px){
+    .profile_container{
+        width:450px;
+    }
+    .data{
+        margin-left:240px;
+    }
+}

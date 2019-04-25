@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="global.css">
+    <script src="globalJS.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="caseinput.css">
+    <script src="functions.js"></script>
+    <title>Title</title>
+    <script>
+        user={
+            "name": "مریم صابری",
+            "email": "temp@gmail.com",
+            "password": 12345678,
+            "confirmed": false,
+            "UserRole": "مدیر",
+            "active": true
+        }
+        function load() {
+            var obj = user;
+            var div = document.getElementById("container").innerHTML;
+            div = div + "<p class = title_page>"
+        }
+    </script>
+</head>
+<body>
+<div id="topnav" visible="false">
+    <div class="topbar">
+        <button id="transform"></button>
+        <p>مشاهده وضعیت موارد</p>
+    </div>
+    <a href="log_reg.html" class="link">لاگین</a>
+    <a href="register.html" class="link">ثبت نام کاربر</a>
+    <a href="editprofile.html" class="link">ویرایش پروفایل کاربر</a>
+    <a href="usercheck.html" class="link">تأیید کاربران توسط مدیر</a>
+    <a href="caseinput.html" class="link">ثبت یک مورد</a>
+    <a href="Cartable.html" class="link">مشاهده موارد</a>
+    <a href="Record.html" class="link">مشاهده وضعیت موارد</a>
+    <a href="user_list.html" class="link">مدیریت کاربران</a>
+    <a href="report.html" class="link">گزارشگیری از سیستم</a>
+</div>
+
+
+<div class="container">
+    <div id = "container" class = "editprof">
+        <p class = title_page>ثبت یک مورد جدید</p>
+        <hr>
+        <p class = title>موضوع</p>
+        <div class = "password_container">
+            <input id ="oldpassword" class = "password"  type="text" placeholder="" required>
+            <br>
+
+        </div>
+        <p class = title>رسیدگی کننده</p>
+        <div class = "password_container">
+            <input class = "password"  type="text" placeholder="" required>
+            <br>
+        </div>
+        <p class = title>توضیحات</p>
+        <div class = "text_container">
+            <textarea rows="10" cols="65" class="textinput"> </textarea>
+            <br>
+        </div>
+        <button class="card_buttun" >ارسال مورد</button>
+
+
+    </div>
+</div>
+</body>
+</html>
